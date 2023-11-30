@@ -1,0 +1,90 @@
+/******** MEDIA QUERIES | HOME PAGE ********/
+
+@media (min-width: 768px) {
+    /* GLOBAL */
+    header {
+        padding: .75em 1.75em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.25em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        height: 2.125em;
+    }
+
+    .main-nav-list {
+        font-size: 1em;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    /* PAGE-HOME */
+    .container-featured {
+        height: 488px;
+        margin-bottom: 2.25em;
+    }
+
+    .featured-body {
+        max-width: 75%;
+    }
+
+    .container-posts {
+        padding: 3.1em 1.25em;
+    }
+
+    .card {
+        border-radius: 7px;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+    .card:hover {
+        box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+        transform: translateY(-.75em);
+    }
+
+    .card-date,
+    .card-title,
+    .card-body {
+        margin: 1rem 1rem;
+    }
+
+    /* PAGE-ABOUT ME */
+    .container-about {
+        display: grid;
+        grid-template: auto auto / max-content auto;
+        padding: 5.68em 4.25em 1.25em 4.25em;
+    }
+
+    /* PAGE-FEATURED ARTICLE */
+    .post-content {
+        padding: 2.25em 4.25em 1.25em 4.25em;
+    }
+
+    .recent-post {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 566px) {
+    /* DISPLAY CARD 3 - 6 INCLUDING "VIEW MORE" LINK */
+    .view-card {
+        display: block;
+    }
+
+    .btn-view-more {
+        display: none;
+    }
+}

@@ -1,0 +1,174 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/******** TYPOGRAPHY ********/
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1, h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+.card-date {
+    font-size: .875em;
+}
+
+.card-title {
+    font-size: 1.5em;
+}
+
+/******** NAVIGATION ********/
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.875em;
+    font-size: .75em;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #e53472;
+}
+
+/******** BUTTONS & LINKS ********/
+.btn-view-more {
+    background-color: #FAFAFA;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    color: #000000;
+}
+
+.view-card {
+    display: none;
+}
+
+/******** LAYOUT ********/
+
+/* PAGE - HOME */
+header,
+.container,
+.container-featured,
+.container-posts,
+.container-about {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1.25em;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 1.75em;
+}
+
+main {
+    background-color: #FAFAFA;
+}
+
+.container-featured {
+    height: 293px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* PAGE - HOME, ABOUT ME, FEATURED POST (RECENT ARTICLES) */
+.container-posts { /* component section used on all pages */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.625em;
+    padding: 2.125em 1.25em;
+}
+
+/* PAGE - ABOUT ME */
+.container-about {
+    padding: 1.625em 1.25em 0 1.25em;
+}
+
+/* PAGE - ABOUT ME, FEATURED ARTICLE */
+.container {
+    padding: 0 1.25em;
+}
+
+/******** SECTION | HERO ********/
+.section-featured {
+    background-image: url("../mlj-hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 1.5em 1.25em;
+}
+
+.featured-title {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/******** SECTION | POSTS ********/
+img {
+    width: 100%;
+}
+
+.card-date,
+.card-title,
+.card-body {
+    margin: 1rem 0;
+}
+
+
+/******** FOOTER ********/
+.footer {
+    background-color: #202020;
+    padding: 1em;
+    margin: 0 auto;
+    color: #ECECEC;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.75em;
+    margin: 0;
+}
+
+/******** PAGE | ABOUT ME ********/
+.post-content {
+    padding: 2.18em 0;
+}
+.persona-img {
+    width: 182px;
+    border-radius: 100%;
+}
+
+.recent-post {
+    font-size: 1.5em;
+    grid-column: 1 / -1;
+    text-align: center;
+}
